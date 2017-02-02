@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00B240E1E43435900249BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B240D1E43435900249BE6 /* AppDelegate.swift */; };
+		A00B24151E43435900249BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00B24141E43435900249BE6 /* Assets.xcassets */; };
+		A00B24181E43435900249BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00B24161E43435900249BE6 /* LaunchScreen.storyboard */; };
+		A00B24231E43460200249BE6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B24221E43460200249BE6 /* Theme.swift */; };
+		A00B24291E4362BC00249BE6 /* UserDefaultConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B24281E4362BC00249BE6 /* UserDefaultConst.swift */; };
+		A00B242E1E43658200249BE6 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B242D1E43658200249BE6 /* UIColor+Extension.swift */; };
+		A00B24301E4365A600249BE6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B242F1E4365A600249BE6 /* BaseViewController.swift */; };
+		A00B24381E4369C300249BE6 /* CommonPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B24371E4369C300249BE6 /* CommonPromptView.swift */; };
+		A02C742A1E43832600E34D05 /* AnimationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02C74291E43832600E34D05 /* AnimationTabBarController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00B240A1E43435900249BE6 /* BeeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00B240D1E43435900249BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A00B24141E43435900249BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00B24171E43435900249BE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A00B24191E43435900249BE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00B24221E43460200249BE6 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A00B24281E4362BC00249BE6 /* UserDefaultConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultConst.swift; sourceTree = "<group>"; };
+		A00B242D1E43658200249BE6 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		A00B242F1E4365A600249BE6 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A00B24361E43679300249BE6 /* BeeAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeeAPP-Bridging-Header.h"; sourceTree = "<group>"; };
+		A00B24371E4369C300249BE6 /* CommonPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPromptView.swift; sourceTree = "<group>"; };
+		A02C74281E43832600E34D05 /* AnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTabBarController.h; sourceTree = "<group>"; };
+		A02C74291E43832600E34D05 /* AnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTabBarController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00B24071E43435900249BE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00B24011E43435900249BE6 = {
+			isa = PBXGroup;
+			children = (
+				A00B240C1E43435900249BE6 /* BeeAPP */,
+				A00B240B1E43435900249BE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00B240B1E43435900249BE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00B240A1E43435900249BE6 /* BeeAPP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00B240C1E43435900249BE6 /* BeeAPP */ = {
+			isa = PBXGroup;
+			children = (
+				A00B240D1E43435900249BE6 /* AppDelegate.swift */,
+				A00B242A1E43658200249BE6 /* CustomClass */,
+				A00B241F1E43458F00249BE6 /* GlobalConst */,
+				A00B24361E43679300249BE6 /* BeeAPP-Bridging-Header.h */,
+				A00B24141E43435900249BE6 /* Assets.xcassets */,
+				A00B24161E43435900249BE6 /* LaunchScreen.storyboard */,
+				A00B24191E43435900249BE6 /* Info.plist */,
+			);
+			path = BeeAPP;
+			sourceTree = "<group>";
+		};
+		A00B241F1E43458F00249BE6 /* GlobalConst */ = {
+			isa = PBXGroup;
+			children = (
+				A00B24221E43460200249BE6 /* Theme.swift */,
+				A00B24281E4362BC00249BE6 /* UserDefaultConst.swift */,
+			);
+			path = GlobalConst;
+			sourceTree = "<group>";
+		};
+		A00B242A1E43658200249BE6 /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				A00B24311E4366EA00249BE6 /* CommonView */,
+				A00B242B1E43658200249BE6 /* BaseControllers */,
+				A00B242C1E43658200249BE6 /* Class+Extension */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		A00B242B1E43658200249BE6 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A00B242F1E4365A600249BE6 /* BaseViewController.swift */,
+				A02C74281E43832600E34D05 /* AnimationTabBarController.h */,
+				A02C74291E43832600E34D05 /* AnimationTabBarController.m */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		A00B242C1E43658200249BE6 /* Class+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A00B242D1E43658200249BE6 /* UIColor+Extension.swift */,
+			);
+			path = "Class+Extension";
+			sourceTree = "<group>";
+		};
+		A00B24311E4366EA00249BE6 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				A00B24371E4369C300249BE6 /* CommonPromptView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00B24091E43435900249BE6 /* BeeAPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00B241C1E43435900249BE6 /* Build configuration list for PBXNativeTarget "BeeAPP" */;
+			buildPhases = (
+				A00B24061E43435900249BE6 /* Sources */,
+				A00B24071E43435900249BE6 /* Frameworks */,
+				A00B24081E43435900249BE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeeAPP;
+			productName = BeeAPP;
+			productReference = A00B240A1E43435900249BE6 /* BeeAPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00B24021E43435900249BE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = steam;
+				TargetAttributes = {
+					A00B24091E43435900249BE6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 475SE62HSQ;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A00B24051E43435900249BE6 /* Build configuration list for PBXProject "BeeAPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00B24011E43435900249BE6;
+			productRefGroup = A00B240B1E43435900249BE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00B24091E43435900249BE6 /* BeeAPP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00B24081E43435900249BE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00B24181E43435900249BE6 /* LaunchScreen.storyboard in Resources */,
+				A00B24151E43435900249BE6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00B24061E43435900249BE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00B24231E43460200249BE6 /* Theme.swift in Sources */,
+				A00B24381E4369C300249BE6 /* CommonPromptView.swift in Sources */,
+				A00B240E1E43435900249BE6 /* AppDelegate.swift in Sources */,
+				A00B24291E4362BC00249BE6 /* UserDefaultConst.swift in Sources */,
+				A00B242E1E43658200249BE6 /* UIColor+Extension.swift in Sources */,
+				A02C742A1E43832600E34D05 /* AnimationTabBarController.m in Sources */,
+				A00B24301E4365A600249BE6 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A00B24161E43435900249BE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A00B24171E43435900249BE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A00B241A1E43435900249BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00B241B1E43435900249BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A00B241D1E43435900249BE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 475SE62HSQ;
+				INFOPLIST_FILE = BeeAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steam.grad-project.BeeAPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeeAPP/BeeAPP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A00B241E1E43435900249BE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 475SE62HSQ;
+				INFOPLIST_FILE = BeeAPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.steam.grad-project.BeeAPP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BeeAPP/BeeAPP-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00B24051E43435900249BE6 /* Build configuration list for PBXProject "BeeAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00B241A1E43435900249BE6 /* Debug */,
+				A00B241B1E43435900249BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00B241C1E43435900249BE6 /* Build configuration list for PBXNativeTarget "BeeAPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00B241D1E43435900249BE6 /* Debug */,
+				A00B241E1E43435900249BE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00B24021E43435900249BE6 /* Project object */;
+}
