@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F1B4D261A60F7E102524120 /* Pods_BeeAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE1F4083590A88B3788C0A8E /* Pods_BeeAPP.framework */; };
 		A00B240E1E43435900249BE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B240D1E43435900249BE6 /* AppDelegate.swift */; };
 		A00B24151E43435900249BE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00B24141E43435900249BE6 /* Assets.xcassets */; };
 		A00B24181E43435900249BE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A00B24161E43435900249BE6 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1678C833FA105DEF06874DD8 /* Pods-BeeAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeeAPP/Pods-BeeAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		43D563D7DF508C457CD1A189 /* Pods-BeeAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeeAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeeAPP/Pods-BeeAPP.release.xcconfig"; sourceTree = "<group>"; };
 		A00B240A1E43435900249BE6 /* BeeAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00B240D1E43435900249BE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A00B24141E43435900249BE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +35,7 @@
 		A00B24371E4369C300249BE6 /* CommonPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPromptView.swift; sourceTree = "<group>"; };
 		A02C74281E43832600E34D05 /* AnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTabBarController.h; sourceTree = "<group>"; };
 		A02C74291E43832600E34D05 /* AnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTabBarController.m; sourceTree = "<group>"; };
+		DE1F4083590A88B3788C0A8E /* Pods_BeeAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeeAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +43,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1B4D261A60F7E102524120 /* Pods_BeeAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5323E4E52E7EFEF8AD9ECD1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1678C833FA105DEF06874DD8 /* Pods-BeeAPP.debug.xcconfig */,
+				43D563D7DF508C457CD1A189 /* Pods-BeeAPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6693FBD5EDC6244E3016C3CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F4083590A88B3788C0A8E /* Pods_BeeAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		68AD1DDE45D2A5B95C8A55CC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		A00B24011E43435900249BE6 = {
 			isa = PBXGroup;
 			children = (
 				A00B240C1E43435900249BE6 /* BeeAPP */,
 				A00B240B1E43435900249BE6 /* Products */,
+				5323E4E52E7EFEF8AD9ECD1E /* Pods */,
+				6693FBD5EDC6244E3016C3CA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +102,7 @@
 				A00B24141E43435900249BE6 /* Assets.xcassets */,
 				A00B24161E43435900249BE6 /* LaunchScreen.storyboard */,
 				A00B24191E43435900249BE6 /* Info.plist */,
+				68AD1DDE45D2A5B95C8A55CC /* Controllers */,
 			);
 			path = BeeAPP;
 			sourceTree = "<group>";
@@ -127,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A00B241C1E43435900249BE6 /* Build configuration list for PBXNativeTarget "BeeAPP" */;
 			buildPhases = (
+				F0F62EB3B7A536548FCA6A48 /* [CP] Check Pods Manifest.lock */,
 				A00B24061E43435900249BE6 /* Sources */,
 				A00B24071E43435900249BE6 /* Frameworks */,
 				A00B24081E43435900249BE6 /* Resources */,
+				E941B6F35733A250FA81D964 /* [CP] Embed Pods Frameworks */,
+				B5B0C5B62182EA5B67DC37B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +222,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5B0C5B62182EA5B67DC37B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeAPP/Pods-BeeAPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E941B6F35733A250FA81D964 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeeAPP/Pods-BeeAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0F62EB3B7A536548FCA6A48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A00B24061E43435900249BE6 /* Sources */ = {
@@ -312,7 +395,9 @@
 		};
 		A00B241D1E43435900249BE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1678C833FA105DEF06874DD8 /* Pods-BeeAPP.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -329,7 +414,9 @@
 		};
 		A00B241E1E43435900249BE6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D563D7DF508C457CD1A189 /* Pods-BeeAPP.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;

@@ -39,3 +39,4 @@ public let BeeTextSmallFont : UIFont = UIFont.systemFont(ofSize: 24 * ScreenUnit
 
 //navigation --titlefont
 public let BeeNavigationTitleFont : UIFont = UIFont.systemFont(ofSize: 33 * ScreenUnit)
+

@@ -14,13 +14,17 @@ enum ErrorType {
     case NotLoginIn
 }
 
+
+
 class BaseViewController: UIViewController {
     
     lazy var  promptView : CommonPromptView = {
         let view = CommonPromptView(frame: ScreenBounds)
         return view
     }()
-    
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +32,7 @@ class BaseViewController: UIViewController {
         //设置背景颜色
         view.backgroundColor = BeeBackgroudColor
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -87,8 +92,11 @@ class BaseViewController: UIViewController {
         
         let rightItem = UIBarButtonItem(customView: rigthButton)
         navigationItem.rightBarButtonItem = rightItem
+
     }
-    
+
+
+
     /// 显示异常
     ///
     /// - Parameters:
