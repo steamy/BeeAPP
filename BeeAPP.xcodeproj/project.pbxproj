@@ -17,6 +17,11 @@
 		A00B24301E4365A600249BE6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B242F1E4365A600249BE6 /* BaseViewController.swift */; };
 		A00B24381E4369C300249BE6 /* CommonPromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00B24371E4369C300249BE6 /* CommonPromptView.swift */; };
 		A02C742A1E43832600E34D05 /* AnimationTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A02C74291E43832600E34D05 /* AnimationTabBarController.m */; };
+		A0B8E9E61E457C6E00C7DF22 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E9E51E457C6E00C7DF22 /* BaseNavigationController.swift */; };
+		A0B8E9E81E45811400C7DF22 /* MainTabBarontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E9E71E45811400C7DF22 /* MainTabBarontroller.swift */; };
+		A0B8E9EE1E4702F400C7DF22 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E9EC1E4702F400C7DF22 /* LoginViewController.swift */; };
+		A0B8E9EF1E4702F400C7DF22 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B8E9ED1E4702F400C7DF22 /* LoginViewController.xib */; };
+		A0B8E9F11E47057100C7DF22 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8E9F01E47057100C7DF22 /* UIButton+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		A00B24371E4369C300249BE6 /* CommonPromptView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPromptView.swift; sourceTree = "<group>"; };
 		A02C74281E43832600E34D05 /* AnimationTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTabBarController.h; sourceTree = "<group>"; };
 		A02C74291E43832600E34D05 /* AnimationTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTabBarController.m; sourceTree = "<group>"; };
+		A0B8E9E51E457C6E00C7DF22 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		A0B8E9E71E45811400C7DF22 /* MainTabBarontroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarontroller.swift; sourceTree = "<group>"; };
+		A0B8E9EC1E4702F400C7DF22 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A0B8E9ED1E4702F400C7DF22 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A0B8E9F01E47057100C7DF22 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		DE1F4083590A88B3788C0A8E /* Pods_BeeAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeeAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +80,8 @@
 		68AD1DDE45D2A5B95C8A55CC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0B8E9E71E45811400C7DF22 /* MainTabBarontroller.swift */,
+				A0B8E9E91E47014E00C7DF22 /* Mine */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,13 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				A00B240D1E43435900249BE6 /* AppDelegate.swift */,
+				68AD1DDE45D2A5B95C8A55CC /* Controllers */,
 				A00B242A1E43658200249BE6 /* CustomClass */,
 				A00B241F1E43458F00249BE6 /* GlobalConst */,
 				A00B24361E43679300249BE6 /* BeeAPP-Bridging-Header.h */,
 				A00B24141E43435900249BE6 /* Assets.xcassets */,
 				A00B24161E43435900249BE6 /* LaunchScreen.storyboard */,
 				A00B24191E43435900249BE6 /* Info.plist */,
-				68AD1DDE45D2A5B95C8A55CC /* Controllers */,
 			);
 			path = BeeAPP;
 			sourceTree = "<group>";
@@ -130,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A00B242F1E4365A600249BE6 /* BaseViewController.swift */,
+				A0B8E9E51E457C6E00C7DF22 /* BaseNavigationController.swift */,
 				A02C74281E43832600E34D05 /* AnimationTabBarController.h */,
 				A02C74291E43832600E34D05 /* AnimationTabBarController.m */,
 			);
@@ -140,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				A00B242D1E43658200249BE6 /* UIColor+Extension.swift */,
+				A0B8E9F01E47057100C7DF22 /* UIButton+Extension.swift */,
 			);
 			path = "Class+Extension";
 			sourceTree = "<group>";
@@ -150,6 +164,15 @@
 				A00B24371E4369C300249BE6 /* CommonPromptView.swift */,
 			);
 			path = CommonView;
+			sourceTree = "<group>";
+		};
+		A0B8E9E91E47014E00C7DF22 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A0B8E9EC1E4702F400C7DF22 /* LoginViewController.swift */,
+				A0B8E9ED1E4702F400C7DF22 /* LoginViewController.xib */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +241,7 @@
 			files = (
 				A00B24181E43435900249BE6 /* LaunchScreen.storyboard in Resources */,
 				A00B24151E43435900249BE6 /* Assets.xcassets in Resources */,
+				A0B8E9EF1E4702F400C7DF22 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +300,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B8E9E61E457C6E00C7DF22 /* BaseNavigationController.swift in Sources */,
 				A00B24231E43460200249BE6 /* Theme.swift in Sources */,
 				A00B24381E4369C300249BE6 /* CommonPromptView.swift in Sources */,
+				A0B8E9F11E47057100C7DF22 /* UIButton+Extension.swift in Sources */,
 				A00B240E1E43435900249BE6 /* AppDelegate.swift in Sources */,
 				A00B24291E4362BC00249BE6 /* UserDefaultConst.swift in Sources */,
 				A00B242E1E43658200249BE6 /* UIColor+Extension.swift in Sources */,
 				A02C742A1E43832600E34D05 /* AnimationTabBarController.m in Sources */,
+				A0B8E9E81E45811400C7DF22 /* MainTabBarontroller.swift in Sources */,
+				A0B8E9EE1E4702F400C7DF22 /* LoginViewController.swift in Sources */,
 				A00B24301E4365A600249BE6 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CommonPromptView: UIView {
     //提示图片
     private    var contentImageView : UIImageView  = {
@@ -70,8 +71,8 @@ class CommonPromptView: UIView {
     ///   - buttonText: button文字
     ///   - action: 点击事件
     ///   - target: 目标上下文
-    func setViewContent(imageName : String , promptText : String , buttonText : String ,action : Selector,target : Any!) {
-        contentImageView.image = UIImage(named: imageName)
+    func setViewContent(image : UIImage , promptText : String , buttonText : String ,action : Selector,target : Any!) {
+        contentImageView.image = image
         
         contentLabel.text = promptText
         

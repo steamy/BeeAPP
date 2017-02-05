@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow.init(frame:ScreenBounds )
         window?.makeKeyAndVisible()
-        
+        setRootViewController()
         
         return true
     }
@@ -47,9 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if !UserDefaults.standard.bool(forKey:UserDefault_IsFirstStart ) {
             //第一次启动加载导航控制器
             UserDefaults.standard.set(true, forKey: UserDefault_IsFirstStart)
-            
+            window?.rootViewController = MainTabBarontroller()
         }else{
             //加载主控制页
+            window?.rootViewController = MainTabBarontroller()
         }
     }
 

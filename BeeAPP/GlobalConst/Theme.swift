@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import ChameleonFramework
 
 // MARK: - 屏幕尺寸
 
@@ -25,7 +26,8 @@ public let BeeBackgroudColor : UIColor = UIColor.colorWithRGB(rgbColor: 0xffffff
 public let BeeTextGrayColor : UIColor = UIColor.colorWithRGB(rgbColor: 0xb2b2b2)
 public let BeeTextBlackColor : UIColor = UIColor.colorWithRGB(rgbColor: 0x262626)
 //button颜色
-public let BeeButtonYellowColor : UIColor = UIColor.colorWithRGB(rgbColor: 0xffd800)
+public let BeeButtonYellowColor : UIColor = UIColor.flatYellow
+public let BeeButtonGrayColor : UIColor = UIColor.colorWithRGB(rgbColor: 0xf1f1f1)
 
 //导航字体颜色
 public let BeeNavigationTitleColor : UIColor = UIColor.colorWithRGB(rgbColor: 0x262626)

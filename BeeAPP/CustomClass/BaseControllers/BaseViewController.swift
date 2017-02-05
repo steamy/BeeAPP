@@ -31,6 +31,7 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
         //设置背景颜色
         view.backgroundColor = BeeBackgroudColor
+
     }
 
 
@@ -57,26 +58,24 @@ class BaseViewController: UIViewController {
     ///
     /// - Parameters:
     ///   - title: 文字item
-    ///   - imageName: 图片
-    ///   - selectImageName: 图片
+    ///   - image: 图片
+    ///   - select: 图片
     ///   - action: 点击事件
-    func setRightItem(title : String?,imageName : String?,selectedImageName : String?,action : Selector) {
+    func setRightItem(title : String?,normalImage : UIImage?,selectedImage : UIImage?,action : Selector) {
         let rigthButton = UIButton(type: .custom)
         rigthButton.frame = CGRect(x: 0, y: 0, width: 45, height: 35)
         
         
         //设置图片
-        if imageName != nil{
-            var normalImage = UIImage(named: imageName!)
-            normalImage = normalImage?.withRenderingMode(.alwaysOriginal)
-            rigthButton.setImage(normalImage, for: .normal)
+        if normalImage != nil{
+            let normalImagecash = normalImage?.withRenderingMode(.alwaysOriginal)
+            rigthButton.setImage(normalImagecash, for: .normal)
             rigthButton.imageEdgeInsets = UIEdgeInsetsMake(3, 3, 0, -20)
             
             //选中效果
-            if selectedImageName != nil {
-                var selectedImage = UIImage(named: selectedImageName!)
-                selectedImage = selectedImage?.withRenderingMode(.alwaysOriginal)
-                rigthButton .setImage(selectedImage, for: .highlighted)
+            if selectedImage != nil {
+                let selectedImagecash = selectedImage?.withRenderingMode(.alwaysOriginal)
+                rigthButton .setImage(selectedImagecash, for: .highlighted)
             }
         }
         
@@ -105,12 +104,12 @@ class BaseViewController: UIViewController {
     func showErrorView(type : ErrorType, setter : Selector) {
         if type == .InternetUnavailable {
             //网络不可用
-            promptView.setViewContent(imageName: "v2_connnect_error", promptText: "当前网络不可用，请稍后重试", buttonText: "点击重试", action: setter, target: self)
+            promptView.setViewContent(image : #imageLiteral(resourceName: "v2_connnect_error") , promptText: "当前网络不可用，请稍后重试", buttonText: "点击重试", action: setter, target: self)
         }else if type == .LocationUnavailable{
             //定位不可用
-            promptView.setViewContent(imageName: "v2_connnect_error", promptText: "当前网络不可用，请稍后重试", buttonText: "点击重试", action: setter, target: self)
+            promptView.setViewContent(image : #imageLiteral(resourceName: "v2_connnect_error"), promptText: "当前网络不可用，请稍后重试", buttonText: "点击重试", action: setter, target: self)
         }else if type == .NotLoginIn   {
-            promptView.setViewContent(imageName: "v2_connnect_error", promptText: "登录后查看购物车、收藏记录", buttonText: "登录", action: setter, target: self)
+            promptView.setViewContent(image : #imageLiteral(resourceName: "v2_connnect_error"), promptText: "登录后查看购物车、收藏记录", buttonText: "登录", action: setter, target: self)
         }
         
         view.addSubview(promptView)
@@ -120,6 +119,4 @@ class BaseViewController: UIViewController {
     func removePromptView() {
         promptView.removeFromSuperview()
     }
-    
-
 }
